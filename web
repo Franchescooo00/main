@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página Web con Diseño y Funciones Mejoradas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .content {
+      width: 600px;
+      padding: 40px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Página Web con Diseño y Funciones Mejoradas</h1>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <h2>Bienvenido</h2>
+      <p>Esta es una página web con un diseño atractivo y algunas funciones interactivas.</p>
+
+      <button id="showMessageButton">Mostrar Mensaje</button>
+      <p id="message" class="hidden">¡Hola! Has mostrado este mensaje de forma interactiva.</p>
+    </div>
+  </div>
+
+  <script>
+    // Función para mostrar el mensaje de forma interactiva
+    function showMessage() {
+      var messageElement = document.getElementById('message');
+      messageElement.classList.remove('hidden');
+    }
+
+    // Evento click para mostrar el mensaje al hacer clic en el botón
+    var showMessageButton = document.getElementById('showMessageButton');
+    showMessageButton.addEventListener('click', showMessage);
+  </script>
+</body>
+</html>
